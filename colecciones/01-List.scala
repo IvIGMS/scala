@@ -2,7 +2,7 @@
 // Seq - Set - Map
 
 // List. Conjunto de elementos ordenados del mismo tipo.
-var lista1 = List("Carlos","Javier","Alberto","Ivan","Juan","Antonio", "Mario")
+var lista1 = List("Carlos","Javier","Alberto","Ivan","Juan","Antonio", "Jose")
 var lista2 = List("Ivan", "Frias", 25, true, 164.5)
 var lista3 = List[String]("Alberto","Lucas","Jose") // Bloqueamos la lista para que solo se puedan datos de tipo 'String'
 
@@ -26,9 +26,12 @@ for (item <- lista1){
 lista1.head
 lista1.last
 lista1.length
-lista1.isEmpty
+lista1.isEmpty // Nos dice si está o no vacío
+lista1.reverse // Nos da la vuelta a la lista
 
+// Rellenar una lista con valores repetidos, en este caso nos va a rellenar con 5 veces el nombre de "Ivan"
 var lista4 = List.fill(5)("Ivan")
 println(lista4)
 
-
+// Añadir elementos a la lista
+lista1 = lista1:+"Alejandro"
